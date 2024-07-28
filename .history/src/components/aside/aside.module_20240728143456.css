@@ -1,0 +1,8 @@
+.topicList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topicTitle {
+  align-content: center;
+}

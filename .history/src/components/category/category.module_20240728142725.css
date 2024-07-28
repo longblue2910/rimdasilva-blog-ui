@@ -1,0 +1,9 @@
+.categoryBtn {
+  border: 1px solid #c4c4c4;
+  border-radius: 47px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 8px;
+  font-size: 15px;
+  margin-right: 6px;
+  background: var(--background-primary);
+}

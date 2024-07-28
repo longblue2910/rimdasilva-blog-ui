@@ -1,0 +1,10 @@
+.topicList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topicTitle {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--foreground-secondary);
+}

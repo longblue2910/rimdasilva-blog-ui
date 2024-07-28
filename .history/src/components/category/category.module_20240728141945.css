@@ -1,0 +1,8 @@
+.categoryBtn {
+  display: flex;
+  align-items: stretch;
+  background: var(--background-primary);
+  border-radius: 10px;
+  box-shadow: 0 5px 5px hsla(0, 0%, 0%, 0.05);
+  overflow: hidden;
+}

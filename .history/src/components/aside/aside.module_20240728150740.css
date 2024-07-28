@@ -1,0 +1,19 @@
+.topicList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.topicTitle {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.sidebar {
+  display: flex;
+  f
+  background: var(--background-primary);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
