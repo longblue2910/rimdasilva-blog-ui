@@ -30,12 +30,24 @@ const BlogCard = () => {
           since it has to be considered on so many different levels: from
           securing code chunks, securing containers, up to securing complex
           infrastructures and defining strong authorization and authentication
-          policies across the enterprise.
+          policies across the enterprise. Nowadays, hard to profoundly talk
+          about security in the IT industry, since it has to be considered on so
+          many different levels: from securing code chunks, securing containers,
+          up to securing complex infrastructures and defining strong
+          authorization and authentication policies across the enterprise.
         </p>
 
         <div className={styles.wrapperFlex}>
           <div className={styles.profileWrapper}>
-            <Image src="/logo.png" alt="Author" width={50} height={50} />
+            <Image
+              src="/logo.png"
+              alt="Author"
+              className={styles.imgAuth}
+              loading="lazy"
+              width={50}
+              height={50}
+              layout="responsive"
+            />
           </div>
 
           <div className={`${styles.wrapper}`}>

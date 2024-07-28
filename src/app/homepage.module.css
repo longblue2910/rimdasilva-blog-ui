@@ -8,3 +8,10 @@
   grid-template-columns: 5fr 2fr;
   gap: 60px;
 }
+
+@media screen and (max-width: 1280px) {
+  .blog {
+    grid-template-columns: 1fr 0fr;
+    gap: 0;
+  }
+}

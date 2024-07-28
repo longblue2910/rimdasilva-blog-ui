@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Category from "../category/Category";
 import styles from "./aside.module.css";
+import { Button, TextField } from "@mui/material";
 
 const Aside = () => {
   return (
-    <div className="section">
+    <div className={`${styles.aside} section`}>
       <div className={styles.topic}>
         <h3 className={styles.topicTitle}>Chủ đề</h3>
         <div className={styles.topicList}>
@@ -24,10 +25,7 @@ const Aside = () => {
         </div>
       </div>
       <div className={styles.sidebar}>
-        <p>
-          Thứ sáu hàng tuần, rimdasilva sẽ gửi bạn email những bài viết hay nhất
-          tuần qua.
-        </p>
+        <h3>Để không bỏ lỡ bất kỳ bài viết nào của chúng mình!</h3>
         <Image
           src="/logo.png"
           width={150}
@@ -35,8 +33,20 @@ const Aside = () => {
           alt="Logo"
           objectFit="cover"
           loading="lazy"
+          style={{ justifyContent: "center", alignItems: "center" }}
         />
-        <p>Nếu không muốn bỏ lỡ, bạn có thể đăng ký tại đây</p>
+        <p>Bạn có thể đăng ký để được nhận thông báo qua mail tại đây:</p>
+        <TextField
+          required
+          id="outlined-required"
+          label="Email"
+          placeholder="Nhập email của bạn"
+          sx={{ width: "100%" }}
+          size="small"
+        />
+        <Button sx={{ width: "100%" }} variant="contained">
+          ĐĂNG KÝ NGAY
+        </Button>
       </div>
     </div>
   );

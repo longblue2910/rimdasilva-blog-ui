@@ -1,3 +1,16 @@
 .cardList {
   margin-top: 20px;
 }
+
+.cardListHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.getAll {
+  color: var(--bg-carolina-blue);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
