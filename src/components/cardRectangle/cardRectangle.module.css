@@ -57,6 +57,7 @@
   display: flex;
   align-items: center;
   margin-top: 10px;
+  gap: 10px;
 }
 
 .cardTag ion-icon {
@@ -93,7 +94,7 @@
 }
 
 .cardBottom {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,7 +109,8 @@
 .infoCourse {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
+  color: var(--foreground-secondary);
 }
 
 .title {
@@ -141,8 +143,38 @@
   gap: 5px;
 }
 
+.infoPrice {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
 .authorText {
   color: var(--foreground-secondary);
+}
+
+.discount {
+  padding: 0px 4px;
+  border-radius: 8px;
+  background: var(--background-quinary);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.priceDiscount {
+  color: #808089;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.price {
+  color: rgb(255, 66, 78);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 600;
 }
 
 @media (max-width: 1280px) {

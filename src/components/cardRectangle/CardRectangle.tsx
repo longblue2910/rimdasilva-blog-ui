@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./cardRectangle.module.css";
 import Link from "next/link";
 import Groups3OutlinedIcon from "@mui/icons-material/Groups3Outlined";
-
+import { Divider } from "@mui/material";
+import "@ionic/react/css/core.css"; // Import CSS chính của Ionic
+import { IonIcon } from "@ionic/react";
+import { people } from "ionicons/icons"; // Import icon bạn muốn sử dụng
 const CardRectangle = ({ isPremium }) => {
   return (
     <div className={`${styles.card}`}>
@@ -22,8 +27,22 @@ const CardRectangle = ({ isPremium }) => {
           <Link href="/">C# Zero to Hero</Link>
         </h3>
         <div className={styles.cardTag}>
-          <span style={{ color: "#f05123", fontWeight: 600 }}>1.000.000đ</span>
+          {/* <span style={{ fontWeight: 600 }}>
+            <s>1.500.000</s>
+          </span> */}
+          <span className={styles.price}>
+            1.000.000<sup>₫</sup>
+          </span>
         </div>
+        <div className={styles.infoPrice}>
+          <div className={styles.discount}>-33%</div>
+          <div className={styles.priceDiscount}>
+            <s>
+              1.500.000<sup>₫</sup>
+            </s>
+          </div>
+        </div>
+        <Divider />
         <div className={styles.cardBottom}>
           <div className={styles.infoAuthor}>
             <Image
@@ -35,10 +54,9 @@ const CardRectangle = ({ isPremium }) => {
             />
             <h4 className={styles.authorText}>rimdasilva</h4>
           </div>
-
           <div className={styles.infoCourse}>
-            <Groups3OutlinedIcon />
-            <span>103</span>
+            <span style={{ fontSize: "14px", fontWeight: 600 }}>103</span>
+            <IonIcon icon={people} />
           </div>
         </div>
         {isPremium && (

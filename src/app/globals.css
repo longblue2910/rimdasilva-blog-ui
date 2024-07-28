@@ -153,7 +153,8 @@ button {
   --background-primary: hsl(218, 23%, 23%);
   --background-secondary: hsl(220, 26%, 14%);
   --background-tertiary: var(--bg-oxford-blue-2);
-  --background-quaternary: hsl(218, 23%, 23%);
+  --background-quaternary: hsla(222, 44%, 13%, 1);
+  --background-quinary: hsl(216, 15%, 52%);
 
   --foreground-primary: hsl(210, 38%, 95%);
   --foreground-secondary: hsl(211, 25%, 84%);
@@ -176,6 +177,7 @@ button {
   --background-secondary: hsl(0, 0%, 97%);
   --background-tertiary: #fff;
   --background-quaternary: #fff;
+  --background-quinary: #f5f5fa;
 
   --foreground-primary: hwb(218 18% 72%);
   --foreground-secondary: hsl(216, 15%, 52%);
