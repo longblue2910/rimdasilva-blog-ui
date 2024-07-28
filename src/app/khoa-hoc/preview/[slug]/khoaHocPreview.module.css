@@ -1,0 +1,83 @@
+.course {
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.link {
+  color: var(--bg-carolina-blue);
+  font-size: 14px;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.tutorialHell {
+  color: var(--bg-carolina-blue);
+  font-weight: 600;
+}
+
+.contentTitle {
+  margin-top: 20px;
+}
+
+.coursePrice {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.courseInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.goal {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+.goalIcon {
+  color: var(--bg-carolina-blue);
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1280px) {
+  .postImg {
+    width: 270px;
+    height: 160px;
+  }
+
+  .textSpan {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .postImg {
+    width: 240px;
+    height: 130px;
+  }
+
+  .textSpan {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .postImg {
+    display: none;
+  }
+
+  .course {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,14 @@
+.topic {
+  margin-top: 20px;
+}
+
+.lesson {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.lessonTitle {
+  font-size: 15px;
+  font-weight: 500;
+}

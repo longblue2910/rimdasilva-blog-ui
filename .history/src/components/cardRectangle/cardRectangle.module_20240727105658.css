@@ -1,0 +1,157 @@
+.card {
+  position: relative;
+  border-radius: 8px;
+  overflow: unset;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: var(--transition-1);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.imgContainer {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 16px;
+}
+
+.cardTitle {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.cardText {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardTag {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cardTag ion-icon {
+  font-size: 16px;
+}
+
+.span {
+  color: #666;
+  font-size: 14px;
+}
+
+.card-wrapper {
+  margin-top: 10px;
+}
+
+.cardBadges {
+  display: flex;
+  gap: 10px;
+}
+
+.cardBadge {
+  background-color: var(--bg-prussian-blue);
+  max-width: max-content;
+  color: var(--text-white);
+  padding: 2px 11px;
+  border-radius: var(--radius-pill);
+  transition: var(--transition-1);
+  margin-bottom: 10px;
+}
+
+.cardBadge:is(:hover, :focus-visible) {
+  transform: translateY(-2px);
+  background-color: var(--bg-carolina-blue);
+}
+
+.cardBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardAuth {
+  color: var(--bg-carolina-blue);
+  font-weight: 600;
+}
+
+.infoCourse {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.cardTag {
+  margin-bottom: 7px;
+}
+
+.proCourse {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #feb602;
+  padding: 5px;
+  border-radius: 8px;
+  pointer-events: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.proCourse img {
+  object-fit: cover;
+}
+
+.infoAuthor {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.authorText{
+  col
+}
+
+@media (max-width: 1280px) {
+  .title {
+    font-size: 16px;
+  }
+
+  .cardContent {
+    padding: 12px;
+  }
+
+  .cardTag {
+    margin-bottom: 2px;
+    font-size: 14px;
+  }
+}
