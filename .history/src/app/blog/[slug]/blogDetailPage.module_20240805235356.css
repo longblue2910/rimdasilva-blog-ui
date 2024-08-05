@@ -1,0 +1,26 @@
+.blogPage {
+  margin-top: 50px;
+}
+
+.subTitle {
+  text-align: center;
+}
+
+.title {
+  line-height: 3.5rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.blogContent {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+}
+
+
+
+.infoAuth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
