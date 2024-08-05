@@ -141,6 +141,15 @@ button {
   cursor: pointer;
 }
 
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
 .dark {
   --bg: var(--bg-oxford-blue-2);
   --bg-reverse: white;
@@ -194,7 +203,7 @@ button {
 }
 
 .wrapper {
-  max-width: 1670px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 80px;
@@ -347,12 +356,6 @@ h4 {
 /*
  * REPONSIVE
  */
-
-@media screen and (max-width: 1536px) {
-  .wrapper {
-    max-width: 1366px;
-  }
-}
 
 @media screen and (max-width: 1280px) {
   .wrapper {

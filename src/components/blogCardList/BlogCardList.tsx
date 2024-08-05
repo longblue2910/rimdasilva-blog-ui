@@ -2,6 +2,7 @@ import styles from "./blogCardList.module.css";
 import BlogCard from "../blogCard/BlogCard";
 import Link from "next/link";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import { Divider } from "@mui/material";
 
 const BlogCardList = () => {
   const renderBlogCards = () => {
@@ -15,12 +16,13 @@ const BlogCardList = () => {
   return (
     <div className="section">
       <div className={styles.cardListHeader}>
-        <h3 className={styles.title}>Dành cho bạn</h3>
+        <h3 className={styles.title}>Bài viết mới nhất</h3>
         <Link href="/" className={`${styles.getAll} hover1`}>
           Xem tất cả
           <KeyboardArrowRightIcon />
         </Link>
       </div>
+      <Divider sx={{ margin: "1.5rem 0" }} />
       <div className={styles.cardList}>{renderBlogCards()}</div>
     </div>
   );

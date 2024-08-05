@@ -4,6 +4,14 @@
   margin-right: auto;
 }
 
+.logoTitle {
+  background-image: var(--gradient-2);
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 800;
+}
+
 .header {
   width: 100%;
   position: fixed;

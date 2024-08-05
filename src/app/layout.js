@@ -4,16 +4,16 @@ import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import { ThemeContextProvider } from "@/context/ThemeContext";
 import ThemeProvider from "@/providers/ThemeProvider";
-import { Inter, Noto_Sans } from "next/font/google";
 import AuthProvider from "@/providers/AuthProvider";
 import { ProgressProvider } from "@/context/ProgressContext";
 import "@ionic/react/css/core.css"; // Import CSS chính của Ionic
 
 import Head from "next/head";
+import { Inter, Noto_Sans } from "next/font/google";
 
 const inter = Inter({
   subsets: ["vietnamese"],
-  weight: ["300", "400", "500", "600", "700"], // Chỉ định các trọng lượng font mong muốn ở đây
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata = {

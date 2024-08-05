@@ -1,0 +1,65 @@
+.heroGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 116px repeat(2, 1fr);
+  padding-top: 5.5rem;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.welcome {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.rimdsv {
+  background-image: var(--gradient-2);
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.homeHand {
+  width: 38px;
+  height: 38px;
+  margin-left: 0.4rem;
+}
+
+.homeSocialIcon {
+  font-size: 1.25rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.homeImg {
+  background: url(../../../public/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+  order: 1;
+  justify-self: center;
+  width: 300px;
+  height: 300px;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.homeDescription {
+  color: var(--foreground-secondary);
+}

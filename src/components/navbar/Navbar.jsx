@@ -58,15 +58,15 @@ const Navbar = () => {
             cursor: "pointer",
           }}
         >
-          <Image
+          {/* <Image
             src="/logo.png"
             width={40}
             height={40}
             alt="logo"
             objectFit="cover"
             style={{ cursor: "pointer" }}
-          />
-          <h3>rimdasilva</h3>
+          /> */}
+          <h1 className={styles.logoTitle}>Rimdasilva</h1>
         </Link>
         <div
           className={

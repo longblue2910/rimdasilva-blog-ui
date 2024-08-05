@@ -38,7 +38,7 @@ const BlogCard = () => {
         </p>
 
         <div className={styles.wrapperFlex}>
-          <div className={styles.profileWrapper}>
+          {/* <div className={styles.profileWrapper}>
             <Image
               src="/logo.png"
               alt="Author"
@@ -48,12 +48,12 @@ const BlogCard = () => {
               height={50}
               layout="responsive"
             />
-          </div>
+          </div> */}
 
           <div className={`${styles.wrapper}`}>
-            <h4 className="hover4">
+            {/* <h4 className="hover4">
               <Link href="#">rimdasilva</Link>
-            </h4>
+            </h4> */}
 
             <p className={styles.textSm}>
               <time>Nov 20, 2021</time>
